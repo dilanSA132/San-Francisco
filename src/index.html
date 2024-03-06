@@ -1,19 +1,99 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Inicio - Obtención de Permisos de Construcción Municipales</title>
+    <title>Best Landing Page Examples</title>
     <link rel="stylesheet" href="main.css">
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <section id="landing-page" class="container">
-        <header>
-            <h1>¡Obtén tus Permisos de Construcción Municipales con Facilidad!</h1>
-            <p>Somos tu aliado en el proceso de obtención de permisos para construcciones. Descarga el formulario oficial o accede a la documentación en línea para solicitar el servicio.</p>
-            <a href="explicacion.html" class="btn btn-primary">¡Más Detalles!</a>
-        </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand">Municipalidad de San Francisco</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resumen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="form.html">Formulario</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <button id="darkModeBtn" class="btn btn-outline-dark">Dark Mode</button>
+        </div>
+    </nav>
+
+
+    <header class="header-section text-center py-5">
+        <div class="container">
+            <h1 class="display-4">¡Agiliza el Proceso de Obtención de Permisos de Construcción Municipales!</h1>
+            <p class="lead">Somos tu aliado en el proceso de obtención de permisos para construcciones. Descarga el formulario oficial o accede a la documentación en línea para solicitar nuestros servicios.</p>
+            <a href="#" class="btn btn-primary btn-lg">Descargar Formulario</a>
+        </div>
+    </header>
+
+    <section class="features-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Asesoramiento Profesional</h3>
+                            <p class="card-text">Contamos con expertos en regulaciones municipales para brindarte el mejor asesoramiento.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Documentación Completa</h3>
+                            <p class="card-text">Te proporcionaremos toda la documentación necesaria para obtener tus permisos de construcción de manera eficiente.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Seguimiento Personalizado</h3>
+                            <p class="card-text">Nos aseguraremos de que estés informado en cada paso del proceso de obtención de permisos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <footer class="footer-section py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Agencia de Permisos de Construcción Municipales. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+            document.getElementById('darkModeBtn').classList.toggle('btn-outline-dark');
+        }
+        document.getElementById('darkModeBtn').addEventListener('click', toggleDarkMode);
+    </script>
+    
+
+
+
 </body>
 </html>

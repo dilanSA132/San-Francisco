@@ -125,6 +125,11 @@
   --bs-form-invalid-border-color: #dc3545;
 }
 
+.dark-mode {
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Texto blanco */
+}
+
 [data-bs-theme=dark] {
   color-scheme: dark;
   --bs-body-color: #dee2e6;
@@ -296,6 +301,7 @@ dl {
   margin-top: 0;
   margin-bottom: 1rem;
 }
+
 
 ol ol,
 ul ul,
