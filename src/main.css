@@ -127,8 +127,11 @@
 
 .dark-mode {
   background-color: #000; /* Fondo negro */
-  color: #fff; /* Texto blanco */
+  color: #adb5bd; /* Texto blanco */
 }
+
+
+
 
 [data-bs-theme=dark] {
   color-scheme: dark;
@@ -226,6 +229,7 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  
 }
 
 hr {
@@ -616,7 +620,7 @@ progress {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
-  color:black;
+  color:white;
 }
 
 .display-1 {
@@ -656,7 +660,7 @@ progress {
   font-size: calc(1.475rem + 2.7vw);
   font-weight: 300;
   line-height: 1.2;
-  color: #2b2f32;
+  color: white;
 }
 @media (min-width: 1200px) {
   .display-4 {

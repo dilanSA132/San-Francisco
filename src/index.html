@@ -12,7 +12,7 @@
         <div class="container">
             <a class="navbar-brand">Municipalidad de San Francisco</a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -21,7 +21,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Inicio</a>
                     </li>
-                    <li class="nav-item"    >
+                    <li class="nav-item">
                         <a class="nav-link" href="resume.html">Resumen</a>
                     </li>
                     <li class="nav-item">
@@ -37,9 +37,9 @@
     <header class="header-section text-center py-5 header-with-background">
         <img src="./img/house.jpg" alt="Image background" class="header-background-image">
         <div class="container">
-            <h1 class="display-4">¡Agiliza el Proceso de Obtención de Permisos de Construcción Municipales!</h1>
+            <h1 class="display-4">¡Agiliza el Proceso de Obtención de Permisos de Construcción Municipales! </h1>
             <p class="lead">Somos tu aliado en el proceso de obtención de permisos para construcciones. Descarga el formulario oficial o accede a la documentación en línea para solicitar nuestros servicios.</p>
-            <a href="./docs/Asignación1.pdf" class="btn btn-primary btn-lg">Descargar Formulario</a>
+            <a href="./docs/Asignación1.pdf" class="btn btn-primary btn-lg"  target="_blank">Descargar Formulario</a>
         </div>
     </header>
 
@@ -80,10 +80,9 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="../dist/popper.min.js"></script>
     <script src="../dist/bootstrap.min.js"></script>
-    
+
     <script>
         function toggleDarkMode() {
             document.body.classList.toggle('dark-mode');
@@ -91,9 +90,5 @@
         }
         document.getElementById('darkModeBtn').addEventListener('click', toggleDarkMode);
     </script>
-    
-
-
-
 </body>
 </html>

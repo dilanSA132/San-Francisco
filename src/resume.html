@@ -13,7 +13,7 @@
         <div class="container">
             <a class="navbar-brand">Municipalidad de San Francisco</a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -53,17 +53,18 @@
                 </ul>
             </div>
             <div class="col-md-6">
-                <img src="../src/img/FirstImg.png" style="height: 450px;" alt="Requisitos de Permisos de Construcción" class="img-fluid">
+                <img src="../src/img/FirstImg.png" style="height: auto;" alt="Requisitos de Permisos de Construcción" class="img-fluid">
             </div>
         </div>
 
         <div class="row mb-5">  
-            <div class="col-md-6">
-                <img src="../src/img/SecondImg.png " style="height: 450px;" alt="Proceso de Evaluación" class="img-fluid">
-            </div>
+          
             <div class="col-md-6">
                 <h3>Proceso de Evaluación</h3>
                 <p>Una vez que se presentan los documentos necesarios, el municipio lleva a cabo una evaluación exhaustiva del proyecto. Esto incluye verificar el cumplimiento de los códigos de construcción, la seguridad estructural y el impacto ambiental.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="../src/img/SecondImg.png" style="height: auto;" alt="Proceso de Evaluación" class="img-fluid">
             </div>
           
         </div>
@@ -83,9 +84,11 @@
         </div>
     </section>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  
+  
+    <script src="../dist/popper.min.js"></script>
     <script src="../dist/bootstrap.min.js"></script>
+
     
     <script>
         function toggleDarkMode() {

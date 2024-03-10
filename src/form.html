@@ -6,19 +6,18 @@
     <title>Formulario de Solicitud - Obtención de Permisos de Construcción Municipales</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="../dist/bootstrap.rtl.min.css">
-    
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand">Municipalidad de San Francisco</a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Inicio</a>
                     </li>
@@ -36,41 +35,96 @@
     </nav>
 
     <section id="formulario-web" class="container">
-        <h2>Formulario de Solicitud de Permisos de Construcción</h2>
-        <form action="#" method="POST">
-            <div class="form-group">
-                <label for="nombre">Nombre:</label>
-                <input type="text" class="form-control" id="nombre" name="nombre" required>
+        <h2 class="mb-4">Formulario de Solicitud de Permisos de Construcción</h2>
+        <form id="formulario" action="javascript:void(0)" method="POST">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre del cliente:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="fecha" class="form-label">Fecha:</label>
+                    <input type="date" class="form-control" id="fecha" name="fecha"  required>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="apellido">Apellido:</label>
-                <input type="text" class="form-control" id="apellido" name="apellido" required>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="telefonoPrincipal" class="form-label">Teléfono Principal:</label>
+                    <input type="tel" class="form-control" id="telefonoPrincipal" name="telefonoPrincipal" required pattern="[0-9]+">
+                </div>
+                <div class="col-md-6">
+                    <label for="telefonoMovil" class="form-label">Teléfono Móvil:</label>
+                    <input type="tel" class="form-control" id="telefonoMovil" name="telefonoMovil" pattern="[0-9]+">
+                </div>
             </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" name="email" required>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Correo Electrónico:</label>
+                    <input type="email" class="form-control" id="email" name="email" required >
+                </div>
+                <div class="col-md-6">
+                    <label for="direccion" class="form-label">Dirección:</label>
+                    <input type="text" class="form-control" id="direccion" name="direccion" required>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" class="form-control" id="telefono" name="telefono">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="ciudad" class="form-label">Ciudad:</label>
+                    <input type="text" class="form-control" id="ciudad" name="ciudad" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="estado" class="form-label">Estado:</label>
+                    <input type="text" class="form-control" id="estado" name="estado" required>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="mensaje">Mensaje:</label>
-                <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="codigoPostal" class="form-label">Código Postal:</label>
+                    <input type="text" class="form-control" id="codigoPostal" name="codigoPostal" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="profesion" class="form-label">Profesión:</label>
+                    <input type="text" class="form-control" id="profesion" name="profesion" required>
+                </div>
             </div>
-            <button href= "./docs/Asignación1.pdf" type="submit" class="btn btn-primary">Enviar</button>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento:</label>
+                    <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="sexo" class="form-label">Sexo:</label>
+                    <select class="form-select" id="sexo" name="sexo">
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
     </section>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="../dist/bootstrap.min.js"></script>
+    
     <script>
-        function toggleDarkMode() {
+        const formulario = document.getElementById('formulario');
+
+        formulario.addEventListener('submit', function(event) {
+            event.preventDefault(); 
+          
+            alert('Mensaje enviado');
+        });
+
+    </script>
+
+    <script src="../dist/popper.min.js"></script>
+    <script src="../dist/bootstrap.min.js"></script>
+
+    <script>
+        const darkModeBtn = document.getElementById('darkModeBtn');
+        darkModeBtn.addEventListener('click', () => {
             document.body.classList.toggle('dark-mode');
-            document.getElementById('darkModeBtn').classList.toggle('btn-outline-dark');
-        }
-        document.getElementById('darkModeBtn').addEventListener('click', toggleDarkMode);
+            darkModeBtn.classList.toggle('btn-outline-dark');
+        });
     </script>
 </body>
 </html>
