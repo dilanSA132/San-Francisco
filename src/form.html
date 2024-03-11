@@ -39,66 +39,74 @@
         <form id="formulario" action="javascript:void(0)" method="POST">
             <div class="row mb-3">
                 <div class="col-md-6">
-                    <label for="nombre" class="form-label">Nombre del cliente:</label>
+                    <label for="nombre" class="form-label">Nombre del solicitante:</label>
                     <input type="text" class="form-control" id="nombre" name="nombre" required>
                 </div>
                 <div class="col-md-6">
-                    <label for="fecha" class="form-label">Fecha:</label>
-                    <input type="date" class="form-control" id="fecha" name="fecha"  required>
+                    <label for="cedula" class="form-label">Cédula o Identificación:</label>
+                    <input type="text" class="form-control" id="cedula" name="cedula" required>
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="col-md-6">
-                    <label for="telefonoPrincipal" class="form-label">Teléfono Principal:</label>
-                    <input type="tel" class="form-control" id="telefonoPrincipal" name="telefonoPrincipal" required pattern="[0-9]+">
-                </div>
-                <div class="col-md-6">
-                    <label for="telefonoMovil" class="form-label">Teléfono Móvil:</label>
-                    <input type="tel" class="form-control" id="telefonoMovil" name="telefonoMovil" pattern="[0-9]+">
-                </div>
-            </div>
-            <div class="row mb-3">
-                <div class="col-md-6">
-                    <label for="email" class="form-label">Correo Electrónico:</label>
-                    <input type="email" class="form-control" id="email" name="email" required >
-                </div>
-                <div class="col-md-6">
-                    <label for="direccion" class="form-label">Dirección:</label>
+                    <label for="direccion" class="form-label">Dirección exacta:</label>
                     <input type="text" class="form-control" id="direccion" name="direccion" required>
                 </div>
-            </div>
-            <div class="row mb-3">
                 <div class="col-md-6">
-                    <label for="ciudad" class="form-label">Ciudad:</label>
-                    <input type="text" class="form-control" id="ciudad" name="ciudad" required>
-                </div>
-                <div class="col-md-6">
-                    <label for="estado" class="form-label">Estado:</label>
-                    <input type="text" class="form-control" id="estado" name="estado" required>
+                    <label for="telefono" class="form-label">Teléfono:</label>
+                    <input type="text" class="form-control" id="telefono" name="telefono" required>
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="col-md-6">
-                    <label for="codigoPostal" class="form-label">Código Postal:</label>
-                    <input type="text" class="form-control" id="codigoPostal" name="codigoPostal" required>
-                </div>
-                <div class="col-md-6">
-                    <label for="profesion" class="form-label">Profesión:</label>
-                    <input type="text" class="form-control" id="profesion" name="profesion" required>
-                </div>
-            </div>
-            <div class="row mb-3">
-                <div class="col-md-6">
-                    <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento:</label>
-                    <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento" required>
-                </div>
-                <div class="col-md-6">
-                    <label for="sexo" class="form-label">Sexo:</label>
-                    <select class="form-select" id="sexo" name="sexo">
-                        <option value="masculino">Masculino</option>
-                        <option value="femenino">Femenino</option>
-                        <option value="otro">Otro</option>
+                    <label for="tipo_construccion" class="form-label">Tipo de construcción:</label>
+                    <select class="form-select" id="tipo_construccion" name="tipo_construccion" required>
+                        <option value="">Seleccione</option>
+                        <option value="Residencial">Residencial</option>
+                        <option value="Comercial">Comercial</option>
+                        <option value="Industrial">Industrial</option>
                     </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="uso_construccion" class="form-label">Uso de la construcción:</label>
+                    <select class="form-select" id="uso_construccion" name="uso_construccion" required>
+                        <option value="">Seleccione</option>
+                        <option value="Habitacional">Habitacional</option>
+                        <option value="Comercial">Comercial</option>
+                        <option value="Industrial">Industrial</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="tamaño_terreno" class="form-label">Tamaño del terreno (m²):</label>
+                    <input type="number" class="form-control" id="tamaño_terreno" name="tamaño_terreno" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="costo" class="form-label">Costo del proyecto ($):</label>
+                    <input type="number" class="form-control" id="costo" name="costo" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="fecha_inicio" class="form-label">Fecha de inicio:</label>
+                    <input type="date" class="form-control" id="fecha_inicio" name="fecha_inicio" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="fecha_fin" class="form-label">Fecha de finalización:</label>
+                    <input type="date" class="form-control" id="fecha_fin" name="fecha_fin" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <label for="descripcion" class="form-label">Descripción de la construcción:</label>
+                    <textarea class="form-control" id="descripcion" name="descripcion" rows="3" required></textarea>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <label for="documentos_adjuntos" class="form-label">Documentos Adjuntos:</label>
+                    <input type="file" class="form-control" id="documentos_adjuntos" name="documentos_adjuntos[]" multiple>
                 </div>
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
